@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ressro</title>
+    <link rel="stylesheet" href="stylenew.css">
+  </head>
+  <body>
+    <section class="top">
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <img class="img1" src="images/Picsart_22-11-27_19-46-56-986.png" alt="" height="100px"width="120px">
+      </div>
+
+      <ul class="navigation">
+        <a href="#menu">
+          <li>Menu</li>
+        </a>
+        <a href="#gallery">
+          <li>About Us</li>
+        </a>
+        <a href="#regestration">
+          <li>Compare</li>
+        </a>
+        <a href="#Contactus">
+          <li>Contact Us</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <div id="mySidenav" class="sidenav">
+    <a href="#" id="About_US">About us</a>
+    <a href="#Resort" id="Ressort">Ressort</a>
+    <a href="#Food" id="Food">Food</a>
+
+
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+    <h1 class=textmain>What is RESSOR</h1>
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <p class=slide2text>We Help You to Compare Best Deal For ordering food and booking a Ressort </p>
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="images\Picsart_22-11-27_20-12-22-282.jpg" style="width:600px; height:400px">
+      <div class="text"></div>
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+    </section>
+    <section class="Food">
+      <div class="divfood">
+<h1 class="foodsectionheading">Food Section</h1>
+<h1 class="textforfoodsection">
+Want to Order Food online Check Best Deal here</h1>
+</div>
+</section >
+
+<section class="Resort">
+
+
+<div class="divresort">
+<h1 class="resortsectionheading">Resort Section</h1>
+<h1 class="textforResortection">
+Want to Book a Resort/ Hotel online Check Best Deal here</h1>
+</div>
+    <section/>
+  </body>
+</html>
